@@ -2,12 +2,13 @@ package utils
 
 import (
 	"fmt"
-	"github.com/bogem/id3v2"
-	"github.com/zmb3/spotify/v2"
 	"log"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/bogem/id3v2"
+	"github.com/zmb3/spotify/v2"
 )
 
 // TagFileWithSpotifyMetadata takes in a filename as a string and spotify metadata and uses it to tag the music

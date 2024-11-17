@@ -3,13 +3,13 @@ package spotifydl
 import (
 	"errors"
 	"fmt"
-	"github.com/buger/jsonparser"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strconv"
 	"strings"
+
+	"github.com/buger/jsonparser"
 )
 
 var httpClient = &http.Client{}
@@ -95,7 +95,7 @@ func ytSearch(searchTerm string, limit int) (results []*SearchResult, err error)
 		return nil, errors.New("failed to make a request to youtube")
 	}
 
-	buffer, err := ioutil.ReadAll(res.Body)
+	buffer, err := io.ReadAll(res.Body)
 	if err != nil {
 		return nil, errors.New("cannot read response from youtube")
 	}

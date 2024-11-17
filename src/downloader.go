@@ -7,7 +7,7 @@ import (
 
 	"github.com/zmb3/spotify/v2"
 
-	"github.com/BharatKalluri/spotifydl/src/utils"
+	"github.com/debug-ing/spotifydl/src/utils"
 )
 
 // Downloader is a function to download files

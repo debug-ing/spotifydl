@@ -3,18 +3,16 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/BharatKalluri/spotifydl/src"
 	"os"
 	"strings"
+
+	spotifydl "github.com/debug-ing/spotifydl/src"
 
 	"github.com/spf13/cobra"
 )
 
-var (
-	ctx context.Context
-)
-
 func main() {
+	ctx := context.Background()
 	var trackID string
 	var playlistID string
 	var albumID string
